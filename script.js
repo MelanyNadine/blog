@@ -1,6 +1,6 @@
 const folders = {
  	"Onion Sites": "./",
-  "Political Web Articles": "./"
+  "Political Web Articles": "./politics"
 };
 
 
