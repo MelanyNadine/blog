@@ -21,3 +21,8 @@ function listFolders() {
 	document.getElementById("buttons").innerHTML += '<a href="'+value+'"><li>'+key+'</li></a>';
   	}
 }
+
+function onions(){
+	let body = document.getElementById("folders");
+	body.style.display = "none";
+}
