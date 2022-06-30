@@ -1,6 +1,6 @@
 const folders = {
  	"Onion Sites": "onions()",
-  "Political Web Articles": "./politics"
+  "Political Web Articles": "politics()"
 };
 
 
@@ -18,7 +18,7 @@ function listFolders() {
   	Object.entries(sortedFolders).forEach(listElements);
 	
 	function listElements([key, value]) {
-	document.getElementById("buttons").innerHTML += '<a href="'+value+'"><li>'+key+'</li></a>';
+	document.getElementById("buttons").innerHTML += '<a href="#"><li onclick="'+value+'">'+key+'</li></a>';
   	}
 }
 
