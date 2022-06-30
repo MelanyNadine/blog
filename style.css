@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  background-image:
+    linear-gradient(
+      to top right, 
+      rgb(70,70,90), rgb(190,190,200), rgb(240,245,252), white , rgb(240,245,252), rgb(190,190,200), rgb(70,70,90)
+    );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  margin: 2vw 0;
+}
+
+ul{
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#folders{
+  margin: 5vw 15vw;
+}
+
+#buttons {
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw;
+  grid-column-gap: 2vw;
+}
+
+#buttons li{
+  background-color: white;
+  font-family: 'Mountains of Christmas', cursive;
+  font-size: 1.7vw;
+  padding: 0.7vw 1.2vw;
+  border-radius: 1vw;
+  border: 5px solid #550a0a;
+  text-align: center;
+  min-height: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#buttons li:hover{
+  background-color: black;
+  border: 5px solid black;
+  color: white;
+}
+
+/********************************
+/	RESPONSIVE DESIGN
+/********************************/
+
+
+  /*	Screen: 650px - 800px
+   *******************************/
+
+@media screen and (max-width: 800px) {
+  a{
+    margin: 2.5vw 0;
+  }
+  #buttons {
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    grid-column-gap: 5vw;
+  }
+
+  #buttons li{
+    min-height: 8vw;
+    font-size: 2.5vw;
+  }
+
+}
+  /*	Screen: less than 600px
+   *******************************/
+
+@media screen and (max-width: 650px) {
+  #folders{
+     margin: 10vw 22vw;
+  }
+
+  #buttons{
+    display: block;
+  }
+
+  #buttons li{
+    min-height: 10vw;
+    margin: 5vw 0;
+    font-size: 3.5vw;
+  }
+
+}
