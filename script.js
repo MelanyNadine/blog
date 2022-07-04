@@ -33,9 +33,8 @@ function onions(){
 	folders.style.display = "none";
 	body = document.getElementsByTagName("BODY")[0];
 	body.innerHTML += "<section id='sites'><ul id='list'></ul></section>";
-	let sortedOnions = sortObject(onion);
 	
-	Object.entries(sortedOnions).forEach(listOnions);
+	Object.entries(onion).forEach(listOnions);
 	
 	function listOnions([key, value]) {
 		document.getElementById("list").innerHTML += "<a href='"+value+"'><li>"+key+"</li></a>";
