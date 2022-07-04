@@ -24,7 +24,7 @@ function listFolders() {
   	Object.entries(sortedFolders).forEach(listElements);
 	
 	function listElements([key, value]) {
-	document.getElementById("buttons").innerHTML += '<a href=""><li onclick="'+value+'">'+key+'</li></a>';
+	document.getElementById("buttons").innerHTML += '<li onclick="'+value+'">'+key+'</li>';
   	}
 }
 
