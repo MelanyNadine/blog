@@ -37,6 +37,6 @@ function onions(){
 	Object.entries(onion).forEach(listOnions);
 	
 	function listOnions([key, value]) {
-		document.getElementById("list").innerHTML += "<a href='"+value+"'><li>"+key+"</li></a>";
+		document.getElementById("list").innerHTML += "<li><a href='"+value+"'>"+key+"</a></li>";
 	}
 }
