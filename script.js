@@ -1,5 +1,5 @@
 const folders = {
- 	"Onion Sites": "window.addEventListener('load', onions)",
+ 	"Onion Sites": "onions()",
 	"Political Web Articles": "politics()"
 };
 
@@ -29,7 +29,7 @@ function listFolders() {
 	function listElements([key, value]) {
 		let final = key.indexOf(" ");
 		let str = key.slice(0,final);
-		document.getElementById("buttons").innerHTML += '<a href="?'+str+'" onclick="'+value+'"><li>'+key+'</li></a>';
+		document.getElementById("buttons").innerHTML += '<a href="+'+str+'" onclick="'+value+'"><li>'+key+'</li></a>';
   	}
 }
 
