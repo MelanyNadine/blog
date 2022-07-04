@@ -51,6 +51,11 @@ ul{
   color: white;
 }
 
+#list{
+  diplay: block;
+  padding: 2vw;
+}
+
 /********************************
 /	RESPONSIVE DESIGN
 /********************************/
