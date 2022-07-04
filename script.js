@@ -34,7 +34,6 @@ function listFolders() {
 }
 
 function onions(){
-	window.location.href = window.location.href + "?onion";
 	let folders = document.getElementById("folders");
 	folders.style.display = "none";
 	body = document.getElementsByTagName("BODY")[0];
