@@ -31,7 +31,7 @@ function listFolders() {
 function onions(){
 	let folders = document.getElementById("folders");
 	folders.style.display = "none";
-	body = document.getElementByTagsName("BODY")[0];
+	body = document.getElementsByTagName("BODY")[0];
 	body.innerHTML += "<section id='sites'><ul id='list'></ul></section>";
 	let sortedOnions = sortObject(onion);
 	
