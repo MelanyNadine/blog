@@ -3,7 +3,7 @@ const folders = {
 	"Political Web Articles": "politics()"
 };
 
-const onions = {
+const onion = {
 	"Imperial Library of Trantor": "http://kx5thpx2olielkihfyo4jgjqfb7zx7wxr3sd4xzt26ochei4m6f7tayd.onion/",
 	"Onion Index": "http://oniondxjxs2mzjkbz7ldlflenh6huksestjsisc3usxht3wqgk6a62yd.onion",
 	"The Guardian": "http://xp44cagis447k3lpb4wwhcqukix6cgqokbuys24vmxmbzmaq2gjvc2yd.onion",
@@ -33,7 +33,7 @@ function onions(){
 	folders.style.display = "none";
 	body = document.getElementByTagsName("BODY")[0];
 	body.innerHTML += "<section id='sites'><ul id='list'></ul></section>";
-	let sortedOnions = sortObject(onions);
+	let sortedOnions = sortObject(onion);
 	
 	Object.entries(sortedOnions).forEach(listOnions);
 	
