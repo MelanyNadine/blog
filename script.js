@@ -1,5 +1,5 @@
 const folders = {
- 	"Onion Sites": "window.addEventListener("load", onions)",
+ 	"Onion Sites": "window.addEventListener('load', onions)",
 	"Political Web Articles": "politics()"
 };
 
