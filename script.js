@@ -29,7 +29,7 @@ function listFolders() {
 	function listElements([key, value]) {
 		let final = key.indexOf(" ");
 		let str = key.slice(0,final);
-		document.getElementById("buttons").innerHTML += '<a href="+'+str+'" onclick="'+value+'"><li>'+key+'</li></a>';
+		document.getElementById("buttons").innerHTML += '<li onclick="'+value+'">'+key+'</li>';
   	}
 }
 
@@ -44,4 +44,5 @@ function onions(){
 	function listOnions([key, value]) {
 		document.getElementById("list").innerHTML += "<li><a href='"+value+"'>"+key+"</a></li>";
 	}
+	window.location.href = window.location.href + "?onion";
 }
